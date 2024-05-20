@@ -1,0 +1,16 @@
+logging_file_path: "debug.log"
+
+train_data_location: "dataset/train.csv"
+test_data_location: "dataset/test.csv"
+sample_submission_data_location: "dataset/sample_submission.csv"
+
+
+training_columns: ["store_nbr","family", "onpromotion", "store_type", "cluster", "city","state", "oil_price", "local_holiday",
+                    "national_holiday","dayOfWeek","monthOfYear"]
+categorical_columns: ["store_nbr","family", "store_type", "cluster", "city", "state","dayOfWeek","monthOfYear"]
+encoded_columns_drop: ["store_nbr_1","family_AUTOMOTIVE", "store_type_C", "cluster_17", "city_Puyo", "state_Pastaza",
+                      "dayOfWeek_0","monthOfYear_1"]
+correlation_threshold: 0.95
+sparsity_column_threshold: 0.99
+
+
